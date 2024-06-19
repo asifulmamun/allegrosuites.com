@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--primary_color: #113c99;
 	--secondary_color: $color__secondary;
+	--txt_color: #6a6a6a;
 	--rem: 16;
 	--wp--preset--font-size--normal: 16px;
 	--wp--preset--font-size--huge: 42px;
@@ -64,6 +65,12 @@ li {
 	list-style: none;
 }
 
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: var(--txt_color);
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -72,6 +79,16 @@ li {
 * {
 	margin: 0;
 	padding: 0;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
 }
 
 /* Box sizing
@@ -186,6 +203,44 @@ li {
 	padding: 16px 15px;
 	text-align: center;
 	margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+	.mainmenu {
+		float: none;
+	}
+	.mainmenu ul li a {
+		padding: 14px 30px;
+	}
+	.reservation a {
+		overflow: hidden;
+		padding-top: 15px;
+		margin-top: 0px;
+	}
+	.reservation a i {
+		float: right;
+		margin-top: -18px;
+	}
+}
+
+.copyright {
+	background: #222;
+	padding: 15px 0;
+}
+
+.copyright .copyright_menu ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: .4rem;
+}
+
+.copyright p {
+	font-size: 14px;
+}
+
+.copyright a {
+	color: var(--txt_color);
 }
 
 /*--------------------------------------------------------------

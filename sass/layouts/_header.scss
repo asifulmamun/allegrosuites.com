@@ -110,3 +110,27 @@
     text-align: center;
     margin-left: 10px;
 }
+
+
+
+@media (max-width: 767px) {
+    .mainmenu {
+        float: none;
+    }
+
+    .mainmenu ul li a {
+        padding: 14px 30px;
+    }
+
+    .reservation a {
+        overflow: hidden;
+        padding-top: 15px;
+        margin-top: 0px;
+    }
+
+    .reservation a i {
+        float: right;
+        margin-top: -18px;
+    }
+}
+

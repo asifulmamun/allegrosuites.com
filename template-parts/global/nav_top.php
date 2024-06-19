@@ -2,9 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 col-sm-12 col-xs-12">
-                <div class="topbar_address"><i class="fa fa-map-marker"></i>House # 21, Block # C, Kolatoli Road, Cox’s
-                    Bazar, Bangladesh.</div>
-                <div class="topbar_phone"><i class="fa fa-phone"></i> Reservations: +880 1777909595</div>
+                <div class="topbar_address"><i class="fa fa-map-marker"></i><?php echo esc_html( get_field('field_667324c8d469a') ) ?: 'Kishoreganj, Dhaka, Bangladesh'; ?></div>
+                <div class="topbar_phone"><i class="fa fa-phone"></i> Reservations: <?php echo esc_html( get_field('field_66732524d469b') ) ?: '+88016 0010 3032'; ?></div>
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="social-ico">

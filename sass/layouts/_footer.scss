@@ -1,0 +1,22 @@
+.copyright {
+    background: #222;
+    padding: 15px 0;
+    
+    .copyright_menu{
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: .4rem;
+        }
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    a{
+        color: var(--txt_color);
+    }
+}
