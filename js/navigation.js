@@ -97,3 +97,6 @@
 		}
 	}
 }() );
+
+
+console.log('navigation.js');

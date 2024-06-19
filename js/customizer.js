@@ -40,3 +40,6 @@
 		} );
 	} );
 }( jQuery ) );
+
+
+console.log('customizer.js');
