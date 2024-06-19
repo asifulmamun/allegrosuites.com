@@ -243,20 +243,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 
+require get_template_directory() . '/inc/tgmpa.php';
 
-function check_acf_plugin_installed() {
-    // Check if ACF is not installed or not active
-    if (!class_exists('ACF')) {
-        // Add an admin notice
-        add_action('admin_notices', 'acf_not_installed_notice');
-    }
-}
-add_action('admin_init', 'check_acf_plugin_installed');
 
-function acf_not_installed_notice() {
-    ?>
-    <div class="notice notice-error is-dismissible">
-        <p><?php _e('The Advanced Custom Fields (ACF) plugin is not installed or activated. Please install and activate it to ensure full functionality.', 'your-text-domain'); ?></p>
-    </div>
-    <?php
-}
