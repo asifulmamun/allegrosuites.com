@@ -1,6 +1,16 @@
 #### ACF
-- Go to ACF>tools
+- Go to ACF->tools
 - import all acf import file from theme_root/lib/acf/
+
+#### Page
+- Go to tools->wordpress importer
+- Import the theeme_root/lib/pages/
+- Go to settings->Reading
+- Chose Your homepage displays: A Static Page as a Home Page
+
+
+#### Menue
+- Create every menu and allocate them with mark
 
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
