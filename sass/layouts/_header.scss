@@ -90,3 +90,23 @@
         display: block;
     }
 }
+
+
+.reservation  a {
+    margin-top: 22px;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #F1F2F3;
+    color: #333;
+    font-size: 14px;
+    padding-left: 11px;
+}
+
+.reservation a i {
+    color: #ffffff;
+    background: #113c99;
+    padding: 16px 15px;
+    text-align: center;
+    margin-left: 10px;
+}
