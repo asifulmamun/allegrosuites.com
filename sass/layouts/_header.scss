@@ -54,3 +54,39 @@
     border-radius: 0px;
     color: #fff;
 }
+
+
+
+
+
+// nav
+.middle_bar {
+    padding: 20px 0;
+}
+
+.mainmenu {
+    float: right;
+    margin-top: 20px;
+}
+
+.mainmenu .navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+.mainmenu ul li a {
+    background: none;
+    color: #333;
+    padding: 14px 10px;
+}
+
+.mainmenu ul li ul li a {
+    padding: 8px 10px;
+}
+
+@media (min-width: 1200px) {
+    .mainmenu ul li:hover ul {
+        display: block;
+    }
+}
