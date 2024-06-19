@@ -1,0 +1,56 @@
+.top_bar {
+    background-color: var(--primary_color);
+}
+
+.topbar_phone {
+    margin-left: 20px;
+}
+
+.topbar_address, .topbar_phone{
+    float: left;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+
+.topbar_address i, .topbar_phone i {
+    /* background: rgba(0, 0, 0, 0.3); */
+    padding: 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin: 0px 2px 0px 0px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.social-ico {
+    overflow: hidden;
+    padding: 8px 0;
+    float: right;
+}
+
+.social-ico ul li {
+    font-size: 16px;
+    margin-left: 6px;
+    float: left;
+}
+
+.social-ico ul li a i {
+    background: rgba(0, 0, 0, 0.3);
+}
+.social-ico ul li a i {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3px;
+    padding: 6px;
+    text-align: center;
+    min-width: 30px;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0px;
+    color: #fff;
+}

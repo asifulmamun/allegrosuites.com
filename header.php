@@ -15,7 +15,15 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
+
+
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 
 	<?php wp_head(); ?>
 </head>
@@ -26,6 +34,16 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'allegrosuites' ); ?></a>
 
 	<header id="masthead" class="site-header">
+
+
+
+
+		<?php get_template_part( 'template-parts/global/nav_top', '' ); ?>
+	
+
+
+
+
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
