@@ -1,3 +1,8 @@
+#### ACF
+- Go to ACF>tools
+- import all acf import file from theme_root/lib/acf/
+
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
 _s
