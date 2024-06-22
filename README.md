@@ -1,3 +1,6 @@
+#### Install Plugins
+- Install pre pack and wp repository plugins
+
 #### ACF
 - Go to ACF->tools
 - import all acf import file from theme_root/lib/acf/
@@ -11,6 +14,10 @@
 
 #### Menue
 - Create every menu and allocate them with mark
+
+#### Shortcode
+- Theme builder custom header/footer add the short code full width: ```theme_header_part``` and ```theme_footer_part```
+
 
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)

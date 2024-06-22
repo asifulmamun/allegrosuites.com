@@ -199,8 +199,13 @@ add_action( 'widgets_init', 'allegrosuites_widgets_init' );
 function allegrosuites_scripts() {
 	wp_enqueue_style( 'allegrosuites-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'allegrosuites-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', array(), _S_VERSION );
+
 
 	wp_enqueue_script( 'allegrosuites-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/95c622a962.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -244,5 +249,8 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 
 require get_template_directory() . '/inc/tgmpa.php';
+
+require get_template_directory() . '/template-parts/global/header-part.php';
+require get_template_directory() . '/template-parts/global/footer-part.php';
 
 
