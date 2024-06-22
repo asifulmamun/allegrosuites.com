@@ -1,5 +1,5 @@
 <?php
-function theme_header_part() {
+function allegrosuites_header_part() {
 ob_start();
 ?>
 <header id="masthead" class="site-header">
@@ -99,4 +99,4 @@ ob_start();
 <?php
 return ob_get_clean();
 }
-add_shortcode('theme_header_part', 'theme_header_part');
+add_shortcode('allegrosuites_header_part', 'allegrosuites_header_part');

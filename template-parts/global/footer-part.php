@@ -1,5 +1,5 @@
 <?php
-function theme_footer_part() {
+function allegrosuites_footer_part() {
 ob_start();
 ?>
 <section class="copyright">
@@ -32,4 +32,4 @@ ob_start();
 <?php
 return ob_get_clean();
 }
-add_shortcode('theme_footer_part', 'theme_footer_part');
+add_shortcode('allegrosuites_footer_part', 'allegrosuites_footer_part');
