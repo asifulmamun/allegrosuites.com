@@ -3,7 +3,7 @@ function allegrosuites_header_part() {
 ob_start();
 ?>
 <header id="masthead" class="site-header">
-    <?php get_template_part( 'template-parts/global/nav_top', '' ); ?>
+    <?php //get_template_part( 'template-parts/global/nav_top', '' ); ?>
     <div class="middle_bar">
         <div class="container">
             <div class="row">
