@@ -6,11 +6,11 @@ add_action('tgmpa_register', 'my_theme_register_required_plugins');
 
 function my_theme_register_required_plugins() {
     $plugins = array(
-        array(
+        /* array(
             'name'      => 'Advanced Custom Fields', // The plugin name
             'slug'      => 'advanced-custom-fields', // The plugin slug (typically the folder name)
             'required'  => true, // If false, the plugin is only 'recommended' instead of required
-        ),
+        ), */
         array(
             'name'      => 'Elementor',
             'slug'      => 'elementor',
