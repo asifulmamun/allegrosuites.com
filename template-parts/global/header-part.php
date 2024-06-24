@@ -3,7 +3,6 @@ function allegrosuites_header_part() {
 ob_start();
 ?>
 <header id="masthead" class="site-header">
-    <?php //get_template_part( 'template-parts/global/nav_top', '' ); ?>
     <div class="middle_bar">
         <div class="container">
             <div class="row">
@@ -41,7 +40,6 @@ ob_start();
                             <a class="navbar-brand hidden-md hidden-sm hidden-lg" href=""><i
                                     class="fa fa-home"></i></a>
                         </div>
-                            
                         <?php
                             wp_nav_menu(
                                 array(
@@ -55,43 +53,13 @@ ob_start();
                                 )
                             );
                         ?>
-                    
-                        <!-- <ul id="menu-menu" class="nav navbar-nav">
-                            <li id="menu-item-121"
-                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-121 active">
-                                <a title="Home" href="http://hotelbeachway.com/">Home</a></li>
-                            <li id="menu-item-21"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-21 dropdown">
-                                <a title="About Hotel" href="#" data-toggle="dropdown"
-                                    class="dropdown-toggle" aria-haspopup="true">About Hotel <span
-                                        class="caret"></span></a>
-                                <ul role="menu" class=" dropdown-menu">
-                                    <li id="menu-item-152"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152">
-                                        <a title="About Hotel Beach Way"
-                                            href="https://hotelbeachway.com/about-hotel-beach-way/">About
-                                            Hotel Beach Way</a></li>
-                                    <li id="menu-item-151"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151">
-                                        <a title="Tourist’s Reviews"
-                                            href="https://hotelbeachway.com/tourists-reviews/">Tourist’s
-                                            Reviews</a></li>
-                                    <li id="menu-item-249"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-249">
-                                        <a title="Photo Gallery"
-                                            href="https://hotelbeachway.com/photo-gallery/">Photo
-                                            Gallery</a></li>
-                                </ul>
-                            </li>
-                        </ul> -->
                     </nav>
                 </div>
                 <div class="col-md-2 col-sm-12 col-xs-12">
-                    <div class="reservation"><a href="https://hotelbeachway.book-onlinenow.net/"
+                    <div class="reservation"><a href="/book"
                             title="Book now at Hotel Beach Way – Cox's Bazar" target="_blank">BOOK NOW<i
                                 class="fa fa-calendar"></i></a></div>
                 </div>
-
             </div>
         </div>
     </div>
