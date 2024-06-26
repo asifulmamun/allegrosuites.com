@@ -201,10 +201,12 @@ function allegrosuites_scripts() {
 	wp_style_add_data( 'allegrosuites-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', array(), _S_VERSION );
 
+	
+    wp_deregister_script('jquery'); // Deregister the default jQuery
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4', true);
+	wp_enqueue_script('jquery'); // Register the default jQuery
 
 	wp_enqueue_script( 'allegrosuites-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	// wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.7.1.slim.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/95c622a962.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array(), _S_VERSION, true );
 
